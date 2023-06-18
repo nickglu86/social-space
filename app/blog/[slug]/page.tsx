@@ -17,9 +17,9 @@ export default async function BlogPostPage ( {params} : Props){
       const post = posts.find((post) => post.slug === params.slug)!; // using ! - non-null assertion , in TypeScript it mean we doesnt expect to get here a null
 
       return(
-            <main>
+            <div>
                <h1>{post.title}</h1>
                <p>{post.content}</p>
-            </main>
+            </div>
       )
 }

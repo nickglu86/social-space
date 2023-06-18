@@ -13,13 +13,13 @@ export default async function Home() {
   if (!session){
     // redirect('/api/auth/signin');
     return(
-      <main className={styles.main}>
+      <div className={styles.main}>
          <p>You must be signed in...</p>
-      </main>
+      </div>
     )
   }
   return (
-    <main className={styles.main}>
+    <div className={styles.main}>
       <div>
         <h1>Welcome to Social Space!</h1>
         <p>
@@ -27,6 +27,6 @@ export default async function Home() {
         </p>
         <p>To get started, sign up for an account</p>
       </div>
-    </main>
+    </div>
   );
 }
