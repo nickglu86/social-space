@@ -16,6 +16,12 @@ const nextConfig = {
                         hostname: 'lh3.googleusercontent.com',
                         port: '',
                         pathname: '/a/**',
+                  },
+                  {
+                        protocol: 'https',
+                        hostname: 'pbs.twimg.com',
+                        port: '',
+                        pathname: '/profile_images/**',
                   }
             ]
       }
